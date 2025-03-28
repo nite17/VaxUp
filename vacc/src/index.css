@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@theme{
+  --color-car:#57939A;
+  --color-navb:#383838;
+  --color-log:#10DCF6;
+  --color-vaxcom:#383838;
+  --color-logofro:#00E2FF;
+  --color-logoto:#6EB5BE;
+  --color-numfro:#64D9E4;
+  --color-numto:#006E79;
+}
