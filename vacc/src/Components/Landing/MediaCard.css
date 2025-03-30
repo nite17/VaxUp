@@ -5,7 +5,7 @@
     padding: 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 10px;
-    border: 2px solid #ffffff00;
+    border: 1px solid #ffffff00;
     font-weight: 400;
 }
 
@@ -30,6 +30,6 @@
 
 .card:hover {
     background-color: #EBFDFF;
-    border: 2px solid #0068747c;
+    border: 1px solid #0068747c;
     cursor: pointer;
 }
