@@ -1,0 +1,35 @@
+.card {
+    height: 450px;
+    width: 360px;
+    background-color: #f2f2f2;
+    padding: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+    border: 2px solid #ffffff00;
+    font-weight: 400;
+}
+
+.card img {
+    object-fit: cover;
+    height: 273px;
+    width: 360px;
+}
+
+.source {
+    width: 350px;
+    font-size: 16px;
+    color: #6EB5BE;
+    padding-left: 20px;
+}
+.title {
+    width: 330px;
+    font-size: 20px;
+    color: #383838;
+    padding-left: 20px;
+}
+
+.card:hover {
+    background-color: #EBFDFF;
+    border: 2px solid #0068747c;
+    cursor: pointer;
+}

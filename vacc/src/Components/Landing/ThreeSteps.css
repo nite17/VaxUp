@@ -1,0 +1,116 @@
+.ThreeSteps {
+    background-color: white;
+    display: flex;
+    height: 642px;
+    width: 100%;
+    margin-top: 120px;
+    margin-bottom: 200px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.content {
+    width: 100%;
+}
+
+.content h1{
+    font-size: 50px;
+    width: 792px;
+    text-align: left;
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 150px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #00C3DA;
+    background: linear-gradient(to right, #00C3DA 0%, #006874 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.content ol{
+    list-style: none;
+    counter-reset: list-counter;
+    padding-left: 150px;
+    font-weight: 600;
+}
+
+.content ol li{
+    counter-increment: list-counter;
+    color: #383838;
+    font-size: 24px;
+    width: 564px;
+    padding: 10px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center; 
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content ol li::before{
+    content: counter(list-counter);
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    margin-right: 10px; 
+    color: white;
+    width: 55px;
+    height: 55px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+
+.ThreeSteps img { 
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%);
+}
+
+.ThreeSteps h2 {
+    font-size: 24px;
+    color: #383838;
+    padding-left: 150px;
+    margin-top: 27px;
+    margin-bottom: 20px;
+}
+
+.ZipCode{
+    margin-left: 150px;
+}
+
+
+.ZipCode input{
+    border: 1px solid #383838;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    height: 70px;
+    width: 253px;
+    outline: none;
+    font-size: 28px;
+    padding-left: 20px;
+    border-right: none;
+}
+
+.ZipCode button{
+    font-weight: 600;
+    font-size: 28px;
+    border: 1px solid #6EB5BE;
+    color: white;
+    border-radius: 40px;
+    height: 74px;
+    width: 147px;
+    background-color: #6EB5BE;
+    cursor: pointer;
+    margin-left: -40px;
+    
+}

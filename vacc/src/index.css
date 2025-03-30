@@ -1,4 +1,8 @@
-@import "tailwindcss";
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+/* @import "tailwindcss/preflight.css" layer(base); */
+@import "tailwindcss/utilities.css" layer(utilities);
+
 @theme{
   --color-car:#57939A;
   --color-navb:#383838;
@@ -8,4 +12,4 @@
   --color-logoto:#6EB5BE;
   --color-numfro:#64D9E4;
   --color-numto:#006E79;
-}
+} 
