@@ -53,11 +53,11 @@ export default function Carousel() {
       <div class="w-full bg-car h-[587.91px] rounded-bl-[70px] flex flex-col items-center  text-center justify-center">
         <img src={carouselItems[index].img} class="w-full h-[587.91px] inset-0   rounded-bl-[70px] object-cover" ></img>
         <h3 class="absolute ml-90 text-7xl w-[700px] text-white font-black -mt-45">{carouselItems[index].title}</h3>
-        <p class="absolute ml-90 text-xl  w-[900px] text-white font-medium mt-0 max-w-112">{carouselItems[index].description}</p>
-        <p class="absolute ml-88 text-2xl text-white font-medium mt-40 max-w-120">{carouselItems[index].description2}</p>
+        <p class="absolute ml-90 text-xl text-white font-medium -mt-5 max-w-120">{carouselItems[index].description}</p>
+        <p class="absolute ml-88 text-2xl text-white font-semibold mt-40 max-w-120">{carouselItems[index].description2}</p>
         <div class="absolute ml-88 flex mt-60 space-x-2">
-          <button class="rounded-2xl text-xl px-10 mt-2 py-3 border-white border-2 text-white font-medium bg-transparent">Learn More</button>
-          <button class="rounded-2xl text-xl px-10 mt-2 py-3 border-white border-2 text-vaxcom bg-white font-medium">Register Now</button>
+          <button class="rounded-2xl text-xl px-12 mt-2 py-3 border-white border-2 text-white font-medium bg-transparent">Learn More</button>
+          <button class="rounded-2xl text-xl px-12 mt-2 py-3 border-white border-2 text-vaxcom bg-white font-medium">Register Now</button>
         </div>
 
       </div>
@@ -68,10 +68,10 @@ export default function Carousel() {
     <div class="w-full bg-car h-[587.91px] rounded-bl-[70px] flex flex-col items-center  text-center justify-center">
       <img src={carouselItems[index].img} class="w-full h-[587.91px] inset-0   rounded-bl-[70px] object-cover" ></img>
       <h3 class="absolute ml-90 text-5xl w-[700px] text-white font-black -mt-45">{carouselItems[index].title}</h3>
-      <p class="absolute ml-90 text-xl  w-[900px] text-white font-medium mt-10 max-w-112">{carouselItems[index].description}</p>
+      <p class="absolute ml-90 text-xl  text-white font-medium mt-10 max-w-120">{carouselItems[index].description}</p>
       <p class="absolute ml-88 text-2xl text-white font-medium mt-40 max-w-120">{carouselItems[index].description2}</p>
       <div class="absolute ml-88 flex mt-60 space-x-2">
-        <button class="rounded-2xl text-xl px-10 mt-2 py-3 border-white border-2 text-white font-medium bg-transparent">Learn More</button>
+        <button class="rounded-2xl text-xl px-12 mt-2 py-3 border-white border-2 text-white font-medium bg-transparent">Learn More</button>
         {/* <button class="rounded-2xl px-10 mt-2 py-2 border-white border-2 text-vaxcom bg-white font-medium">Register Now</button> */}
       </div>
 
