@@ -1,4 +1,6 @@
+import {ChevronLeft,ChevronRight} from 'react-feather'
 import { useState, useEffect } from "react"
+
 
 const carouselItems = [
   {
@@ -43,38 +45,30 @@ export default function Carousel() {
     setIndex((prevIndex) => (prevIndex + 1) % carouselItems.length);
   }
   const prevSlide = () => {
+    if(index==0){
+      return 
+    }
     setIndex((prevIndex) => (prevIndex - 1) % carouselItems.length);
   }
 
 
-  if (index == 0) {
-
-    return (
-      <div class="w-full bg-car h-[587.91px] rounded-bl-[70px] flex flex-col items-center  text-center justify-center">
-        <img src={carouselItems[index].img} class="w-full h-[587.91px] inset-0   rounded-bl-[70px] object-cover" ></img>
-        <h3 class="absolute ml-90 text-8xl w-[700px] text-white font-black -mt-45">{carouselItems[index].title}</h3>
-        <p class="absolute ml-90 text-xl text-white font-medium -mt-5 max-w-120">{carouselItems[index].description}</p>
-        <p class="absolute ml-88 text-2xl text-white font-semibold mt-40 max-w-120">{carouselItems[index].description2}</p>
-        <div class="absolute ml-88 flex mt-60 space-x-2">
-          <button class="rounded-2xl text-xl px-12 mt-2 py-3 border-white border-2 text-white font-medium bg-transparent">Learn More</button>
-          <button class="rounded-2xl text-xl px-12 mt-2 py-3 border-white border-2 text-vaxcom bg-white font-medium">Register Now</button>
-        </div>
-
-      </div>
-    )
-  }
+  
+  
 
   return (
-    <div class="w-full bg-car h-[587.91px] rounded-bl-[70px] flex flex-col items-center  text-center justify-center">
+    <div class="w-full bg-car h-[587.91px] rounded-bl-[70px] flex flex-col items-center  text-center justify-center ">
       <img src={carouselItems[index].img} class="w-full h-[587.91px] inset-0   rounded-bl-[70px] object-cover" ></img>
-      <h3 class="absolute ml-90 text-5xl w-[700px] text-white font-black -mt-45">{carouselItems[index].title}</h3>
+      <h3 class={index==0? 'absolute ml-90 text-8xl  w-[700px] text-white font-black -mt-45' :'absolute ml-90 text-5xl w-[700px] text-white font-black -mt-45'}>{carouselItems[index].title}</h3>
       <p class="absolute ml-90 text-xl  text-white font-medium mt-10 max-w-120">{carouselItems[index].description}</p>
       <p class="absolute ml-88 text-2xl text-white font-medium mt-40 max-w-120">{carouselItems[index].description2}</p>
       <div class="absolute ml-88 flex mt-60 space-x-2">
-        <button class="rounded-2xl text-xl px-12 mt-2 py-3 border-white border-2 text-white font-medium bg-transparent">Learn More</button>
-        {/* <button class="rounded-2xl px-10 mt-2 py-2 border-white border-2 text-vaxcom bg-white font-medium">Register Now</button> */}
+        <button class="rounded-2xl text-xl px-12 mt-2 py-3 border-white border-2 text-white font-medium bg-transparent hover:opacity-60 hover:cursor-pointer">Learn More</button>
+        {index==0?<button class="rounded-2xl text-xl px-12 mt-2 py-3 border-white border-2 text-vaxcom bg-white font-medium hover:opacity-60 hover:cursor-pointer">Register Now</button>:null}
+       
+       
       </div>
-
+      <button class="bg-transparent border-0 text-white absolute left-0" onClick={prevSlide}><ChevronLeft size={40}/></button>
+      <button class="bg-transparent border-0 text-white absolute right-0" onClick={nextSlide}><ChevronRight size={40}/></button>
     </div>
 
 
