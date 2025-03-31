@@ -1,0 +1,56 @@
+/* Footer.css */
+
+/* Base Container */
+.footer-container {
+    background-color: #6aa6b2; /* Adjust to match your Figma shade */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 40px;
+    font-family: Arial, sans-serif; /* Adjust if using a custom font */
+  }
+  
+  /* Left Section (Logo + Social Icons) */
+  .footer-left {
+    flex: 1;
+    margin-right: 40px;
+  }
+  
+  .footer-logo {
+    font-size: 2rem; /* Make the brand name large and prominent */
+    margin-bottom: 10px;
+  }
+  
+  .footer-socials {
+    display: flex;
+    gap: 15px; /* Space between icons */
+    font-size: 1.2rem; /* Size of icons */
+  }
+  
+  /* Middle + Right Columns */
+  .footer-column {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .footer-column h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-transform: uppercase; /* or remove if you don't want uppercase */
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 6px;
+  }
+  
+  /* For the contact text */
+  .footer-column p {
+    margin: 0;
+  }
+  

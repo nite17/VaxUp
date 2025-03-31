@@ -1,11 +1,15 @@
-import { useState } from 'react'
-import './App.css'
-import NavBar from './Components/Landing/NavBar'
-import Carousel from './Components/Landing/Carousel'
-import VaxCount from './Components/Landing/VaxCount'
-import ThreeSteps from './Components/Landing/ThreeSteps'
-import LatestNews from './Components/Landing/LatestNews'
-import FAQItem from './Components/FAQItem'
+import React from 'react';
+import './App.css';
+import NavBar from './Components/Landing/NavBar';
+import Carousel from './Components/Landing/Carousel';
+import VaxCount from './Components/Landing/VaxCount';
+import ThreeSteps from './Components/Landing/ThreeSteps';
+import LatestNews from './Components/Landing/LatestNews';
+import FAQItem from './Components/FAQItem';
+import Footer from './Components/Footer.jsx';
+import DigiLockerLogin from './Components/DigiLockerLogin';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 const faqData = [
   { question: "How do I book a vaccination appointment?", answer: "You can book an appointment online through our portal." },
   { question: "Can I reschedule or cancel my appointment?", answer: "Yes, you can reschedule or cancel within 24 hours before your appointment." },
@@ -14,30 +18,37 @@ const faqData = [
 ];
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div class="bg-stone-200">
-        <NavBar />
-      </div>
-      <Carousel />
-      <VaxCount />
-      <ThreeSteps />
-      <LatestNews />
-      <div className="bg-white min-h-screen p-6">
-      <div className="  mx-auto">
-        <h2 className="text-2xl font-bold mb-2 ml-40 text-vaxcom">FAQs</h2>
-        <hr className="border-black mb-4 w-[85%] mx-auto"  />  {/* Black line under title */}
+    <BrowserRouter>
+      {/* Common layout elements that persist across routes */}
+      <Routes>
+        {/* Home route */}
+        <Route
+          path="/"
+          element={
+            <>
+            <NavBar />
+              <Carousel />
+              <VaxCount />
+              <ThreeSteps />
+              <LatestNews />
+              <div className="mx-auto">
+                <h2 className="text-2xl font-bold mb-2 ml-40 text-vaxcom">FAQs</h2>
+                <hr className="border-black mb-4 w-[85%] mx-auto" />
+                {faqData.map((faq, index) => (
+                  <FAQItem key={index} question={faq.question} answer={faq.answer} />
+                ))}
+              <Footer />
+              </div>
+            </>
+          }
+        />
+        {/* Login route */}
+        <Route path="/login" element={<DigiLockerLogin />} />
 
-        {faqData.map((faq, index) => (
-          <FAQItem  key={index} question={faq.question} answer={faq.answer} />
-        ))}
-      </div>
-    </div>
-
-    </>
-  )
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
