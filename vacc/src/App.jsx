@@ -9,6 +9,7 @@ import FAQItem from './Components/FAQItem';
 import Footer from './Components/Footer.jsx';
 import DigiLockerLogin from './Components/DigiLockerLogin';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ABHAInfo from './Components/Landing/ABHAInfo.jsx';
 
 const faqData = [
   { question: "How do I book a vaccination appointment?", answer: "You can book an appointment online through our portal." },
@@ -38,6 +39,8 @@ function App() {
                 {faqData.map((faq, index) => (
                   <FAQItem key={index} question={faq.question} answer={faq.answer} />
                 ))}
+
+              <ABHAInfo />
               <Footer />
               </div>
             </>
