@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 
 const carouselItems = [
   {
-    img: '/c1.png',
+    img: '/c1 (1).png',
     title: "VaxUp",
     description:
       "Easily book your vaccination appointments, access certificates and  stay updated on the latest health advisories - all in one place.",
