@@ -33,8 +33,8 @@ function App() {
               <ThreeSteps />
               <LatestNews />
               <div className="mx-auto">
-                <h2 className="text-2xl font-bold mb-2 ml-40 text-vaxcom">FAQs</h2>
-                <hr className="border-black mb-4 w-[85%] mx-auto" />
+                <h2 className="text-3xl font-bold mb-2 ml-40 text-vaxcom ">FAQs</h2>
+                <hr className=" text-vaxcom mb-4 w-[85%] mx-auto" />
                 {faqData.map((faq, index) => (
                   <FAQItem key={index} question={faq.question} answer={faq.answer} />
                 ))}
