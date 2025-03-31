@@ -11,7 +11,7 @@ export default function () {
     return (
         <div className='LatestNews'>
             <div className='Heading'>
-                <h1>Latest News</h1>
+                <h1 class="font-semibold">Latest News</h1>
                 <button className='expand' onClick={clicked}><h1>{expanded ? "Fewer" : "All"}</h1><img src={ArrowR} /></button>
             </div>
             <hr />
