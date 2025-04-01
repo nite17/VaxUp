@@ -7,7 +7,7 @@ export default function NavBar() {
         VaxUp
       </p>
       <div className="flex space-x-14 mr-16">
-        <a href="#" className="text-xl font-semibold text-navb mt-2 transition-all duration-200 hover:scale-110 no-underline">
+        <a href="#FAQ" className="text-xl font-semibold text-navb mt-2 transition-all duration-200 hover:scale-110 no-underline">
           FAQ
         </a>
         <a href="#" className="text-xl font-medium text-navb mt-2 transition-all duration-200 hover:scale-110 no-underline">

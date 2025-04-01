@@ -9,7 +9,7 @@ const FAQ = () => {
     { question: "Are there any side effects after vaccination?", answer: "Some mild side effects like fever and fatigue may occur." },
   ];
   return (
-    <div className="mx-auto mb-[200px]">
+    <div className="mx-auto mb-[200px]" id="FAQ">
       <h2 className="text-4xl font-semibold mb-6 ml-40 text-vaxcom ">FAQs</h2>
       <hr className=" text-vaxcom mb-8 w-[90%] " />
       {faqData.map((faq, index) => (
