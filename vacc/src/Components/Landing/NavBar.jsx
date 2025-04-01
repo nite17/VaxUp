@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function NavBar() {
   return (
-    <nav className="flex h-25 justify-between w-full bg-white items-center">
+    <nav className="flex h-25 justify-between w-full bg-white items-center top-0 fixed z-60">
       <p className="text-transparent bg-clip-text bg-gradient-to-r from-logofro to-logoto text-6xl ml-10 font-black hover:cursor-pointer">
         VaxUp
       </p>

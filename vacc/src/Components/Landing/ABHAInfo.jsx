@@ -1,10 +1,10 @@
 import React from "react";
-import ABHA from "./ABHA3.png";
+import ABHA from "../../assets/ABHA3.png";
 
 const ABHAInfo = () => {
   return (
     <div className="w-full bg-[#D9D9D9] py-3 flex space-x-2">
-      <div className="max-w-4xl mx-auto flex items-center  px-40">
+      <div className="max-w-4xl mx-auto flex items-center  px-40 z-10">
         {/* Left Section: Text */}
         <div className="py-20">
           <h2 className="text-7xl font-bold gradient-text mb-0">ABHA ID</h2>
@@ -14,8 +14,9 @@ const ABHAInfo = () => {
           ABHA number is a 14 digit number that will uniquely identify you as a participant in India’s digital healthcare ecosystem. ABHA number will establish a strong and trustable identity for you that will be accepted by healthcare providers across the country.
           </p>
           <a
-            href="https://abha.abdm.gov.in/abha/v3/"
-            className="text-[#006874] font-semibold mt-5 inline-block text-3xl no-underline"
+            href="https://abha.abdm.gov.in/abha/v3/" 
+            className="text-[#006874] font-semibold mt-5 inline-block text-3xl no-underline z-10"
+            target="_blank"
           >
             Learn more
           </a>
