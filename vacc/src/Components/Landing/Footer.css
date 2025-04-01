@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20% 20px 20%;
+    padding: 20px 20vw 20px 20vw;
     font-family: Arial, sans-serif; /* Adjust if using a custom font */
   }
   
@@ -16,7 +16,7 @@
     flex: 1;
     padding-left: 0px;
   }
-  .footer-right {
+  .footer-right { 
     display: flex;
     margin-right: 40px;
   }
@@ -39,8 +39,8 @@
   /* Middle + Right Columns */
   .footer-column {
     flex: 1;
-    margin: 0 20px;
-    width: 20%;
+    margin: 0 50px;
+    width: 10%;
   }
   
   .footer-column h3 {
@@ -52,6 +52,7 @@
   .footer-column ul {
     list-style: none;
     padding: 0;
+    width: 8rem;
   }
   
   .footer-column li {

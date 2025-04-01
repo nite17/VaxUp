@@ -54,8 +54,8 @@ export default function Carousel() {
 
 
   return (
-    <div class="w-full bg-car h-[587.91px] rounded-bl-[70px] flex flex-col items-center  text-center justify-center mt-24">
-      <img src={carouselItems[index].img} class="w-full h-[587.91px] inset-0   rounded-bl-[70px] object-cover" ></img>
+    <div class="w-full bg-car h-[587.91px] rounded-bl-[70px] rounded-br-[70px] flex flex-col items-center  text-center justify-center mt-24 ">
+      <img src={carouselItems[index].img} class="w-full h-[587.91px] inset-0   rounded-bl-[70px] rounded-br-[70px] object-cover" ></img>
       <h3 class={index == 0 ? 'absolute ml-90 text-8xl  w-[700px] text-white font-black -mt-45 -mb-2 ' : 'absolute ml-90 text-5xl w-[700px] text-white font-black -mt-45'}>{carouselItems[index].title}</h3>
       <p class="absolute ml-90 text-xl  text-white font-medium mt-10  max-w-120">{carouselItems[index].description}</p>
       <p class="absolute ml-88 text-2xl text-white font-medium mt-40 max-w-120">{carouselItems[index].description2}</p>
