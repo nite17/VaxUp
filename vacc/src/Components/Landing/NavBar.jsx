@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 export default function NavBar() {
   return (
     <nav className="flex h-25 justify-between w-full bg-white items-center top-0 fixed z-60 shadow-xl">
-      <p className="text-transparent bg-clip-text bg-gradient-to-r from-logofro to-logoto text-6xl ml-10 font-black hover:cursor-pointer">
-        VaxUp
-      </p>
+      <Link  className="no-underline" to="/">
+        <p className="text-transparent bg-clip-text bg-gradient-to-r from-logofro to-logoto text-6xl ml-10 font-black hover:cursor-pointer ">
+          VaxUp
+        </p>
+      </Link>
       <div className="flex space-x-14 mr-16">
         <a href="#FAQ" className="text-xl font-semibold text-navb mt-2 transition-all duration-200 hover:scale-110 no-underline">
           FAQ

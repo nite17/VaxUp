@@ -7,6 +7,9 @@
     margin-bottom: 200px;
     line-height: 1.5;
     font-weight: 400;
+    padding-right: 0px;
+    margin-right: 0px;
+    justify-content: space-between;
 }
 
 .content {
@@ -71,7 +74,6 @@
     z-index: 1;
     width: auto;
     height: auto;
-    
     -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1) 50%);
     mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1) 50%);
 }
