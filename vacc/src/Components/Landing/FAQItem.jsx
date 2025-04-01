@@ -18,7 +18,7 @@ const FAQItem = ({ question, answer }) => {
         className="flex justify-between border-0  bg-transparent items-center w-full text-left font-medium focus:outline-none "
         onClick={() => setIsOpen(!isOpen)}
       >
-        <div class="text-vaxcom text-xl ml-4 ">{question}</div>
+        <div class="text-vaxcom text-xl py-2 ml-4 ">{question}</div>
 
         <svg
           xmlns="http://www.w3.org/2000/svg"

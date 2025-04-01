@@ -20,28 +20,30 @@ const Footer = () => {
       </div>
 
       {/* Middle Sections: Menu + Partners */}
-      <div className="footer-column">
-        <h3>Menu</h3>
-        <ul>
-          <li>Search</li>
-          <li>Dashboard</li>
-          <li>FAQ</li>
-        </ul>
-      </div>
+      <div className="footer-right">
+        <div className="footer-column">
+          <h3>Menu</h3>
+          <ul>
+            <li>Search</li>
+            <li>Dashboard</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
 
-      <div className="footer-column">
-        <h3>Our partners</h3>
-        <ul>
-          <li>Apollo hospitals</li>
-          <li>SBS hospitals</li>
-          <li>Fortis hospitals</li>
-        </ul>
-      </div>
+        <div className="footer-column">
+          <h3>Our partners</h3>
+          <ul>
+            <li>Apollo hospitals</li>
+            <li>SBS hospitals</li>
+            <li>Fortis hospitals</li>
+          </ul>
+        </div>
 
-      {/* Right Section: Contact */}
-      <div className="footer-column">
-        <h3>Contact Us</h3>
-        <p>contact@vaxup.com</p>
+        {/* Right Section: Contact */}
+        <div className="footer-column">
+          <h3>Contact Us</h3>
+          <p>contact@vaxup.com</p>
+        </div>
       </div>
     </footer>
   );

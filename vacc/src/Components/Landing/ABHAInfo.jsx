@@ -10,8 +10,8 @@ const ABHAInfo = () => {
         {/* Left Section: Text */}
         <div className="py-20">
           <h2 className="text-7xl font-bold gradient-text mb-0">ABHA ID</h2>
-          <h2 className="text-7xl font-bold gradient-text mt-0">& Benefits</h2>
-          <p className="text-gray-700 mt-5 leading-relaxed text-2xl max-w-5xl">
+          <h2 className="text-7xl font-bold gradient-text mt-0 mb-10">& Benefits</h2>
+          <p className="text-gray-700 mt-0 leading-relaxed text-2xl max-w-5xl font-medium">
             ABHA (Ayushman Bharat Health Account) ID is a digital health identity under India’s ABDM.
             ABHA number is a 14 digit number that will uniquely identify you as a participant in India’s digital healthcare ecosystem. ABHA number will establish a strong and trustable identity for you that will be accepted by healthcare providers across the country.
           </p>
