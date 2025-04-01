@@ -10,13 +10,15 @@ import Footer from './Components/Footer.jsx';
 import DigiLockerLogin from './Components/DigiLockerLogin';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ABHAInfo from './Components/Landing/ABHAInfo.jsx';
+import FAQ from './Components/Landing/FAQ.jsx';
 
-const faqData = [
-  { question: "How do I book a vaccination appointment?", answer: "You can book an appointment online through our portal." },
-  { question: "Can I reschedule or cancel my appointment?", answer: "Yes, you can reschedule or cancel within 24 hours before your appointment." },
-  { question: "What documents do I need to bring on the day of vaccination?", answer: "You need to bring a valid ID and your appointment confirmation." },
-  { question: "Are there any side effects after vaccination?", answer: "Some mild side effects like fever and fatigue may occur." },
-];
+
+// const faqData = [
+//   { question: "How do I book a vaccination appointment?", answer: "You can book an appointment online through our portal." },
+//   { question: "Can I reschedule or cancel my appointment?", answer: "Yes, you can reschedule or cancel within 24 hours before your appointment." },
+//   { question: "What documents do I need to bring on the day of vaccination?", answer: "You need to bring a valid ID and your appointment confirmation." },
+//   { question: "Are there any side effects after vaccination?", answer: "Some mild side effects like fever and fatigue may occur." },
+// ];
 
 function App() {
   return (
@@ -28,21 +30,15 @@ function App() {
           path="/"
           element={
             <>
-            <NavBar />
+              <NavBar />
               <Carousel />
               <VaxCount />
               <ThreeSteps />
               <LatestNews />
-              <div className="mx-auto">
-                <h2 className="text-3xl font-bold mb-2 ml-40 text-vaxcom ">FAQs</h2>
-                <hr className=" text-vaxcom mb-4 w-[85%] mx-auto" />
-                {faqData.map((faq, index) => (
-                  <FAQItem key={index} question={faq.question} answer={faq.answer} />
-                ))}
-
+              <FAQ />
               <ABHAInfo />
               <Footer />
-              </div>
+              
             </>
           }
         />
