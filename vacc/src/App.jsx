@@ -11,6 +11,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ABHAInfo from './Components/Landing/ABHAInfo.jsx';
 import FAQ from './Components/Landing/FAQ.jsx';
 import Dashboard from './Components/Dashboard/dashboard.jsx';
+import Appointment from './Components/Dashboard/Appointment.jsx';
 import { Patient } from './Components/Dashboard/profile.jsx';
 
 const john = new Patient(
@@ -62,6 +63,7 @@ function App() {
         {/* Login route */}
         <Route path="/login" element={<DigiLockerLogin />} />
         <Route path="/dashboard" element={< Dashboard patient={john} />} />
+        <Route path="/ap" element={<Appointment/>}/>
 
       </Routes>
     </BrowserRouter>
