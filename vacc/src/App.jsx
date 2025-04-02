@@ -10,8 +10,6 @@ import DigiLockerLogin from './Components/DigiLockerLogin';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ABHAInfo from './Components/Landing/ABHAInfo.jsx';
 import FAQ from './Components/Landing/FAQ.jsx';
-import VaccinationImportance from './Components/Articles/VaccinationImportance.jsx';
-
 
 
 function App() {
@@ -38,7 +36,6 @@ function App() {
         />
         {/* Login route */}
         <Route path="/login" element={<DigiLockerLogin />} />
-        <Route path="/article/1" element={<VaccinationImportance />} />
 
       </Routes>
     </BrowserRouter>
