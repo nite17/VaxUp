@@ -1,0 +1,98 @@
+.vaccine-journey {
+    background-color: white;
+    padding: 2rem 0 1rem 0;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.vaccine-journey-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.author-name {
+    color: #383838;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.author-details {
+    color: #666;
+    font-size: 1rem;
+}
+
+.content {
+    color: #383838;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    max-width: 900px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.content p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.vaccination-image {
+    margin: 1.5rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.vaccination-image img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+    margin-top: 0.75rem;
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.section-title {
+    color: #383838;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    text-align: left;
+    width: 100%;
+}
+
+.phase-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.phase-list li {
+    margin-bottom: 0.75rem;
+    text-align: justify;
+}
+
+.phase-list strong {
+    color: #383838;
+    font-weight: 600;
+} 
