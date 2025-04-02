@@ -10,7 +10,6 @@ import DigiLockerLogin from './Components/DigiLockerLogin';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ABHAInfo from './Components/Landing/ABHAInfo.jsx';
 import FAQ from './Components/Landing/FAQ.jsx';
-import VaccinationImportance from './Components/Articles/VaccinationImportance.jsx';
 import Dashboard from './Components/Dashboard/dashboard.jsx';
 import { Patient } from './Components/Dashboard/profile.jsx';
 
