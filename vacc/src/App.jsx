@@ -62,7 +62,6 @@ function App() {
         />
         {/* Login route */}
         <Route path="/login" element={<DigiLockerLogin />} />
-        <Route path="/article/1" element={<VaccinationImportance />} />
         <Route path="/dashboard" element={< Dashboard patient={john} />} />
 
       </Routes>
