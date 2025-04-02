@@ -28,7 +28,7 @@ const john = new Patient(
     { id: 3, name: "Jake Doe" }
   ],
   [  // appointments
-    { id: 101, vaccine: "COVID-19 Booster", date: "2025-04-10", time: "10:30 AM", location: "City Health Center", doctor: "Dr. Smith" }
+    { id: 101, vaccine: "COVID-19 Booster", date: "Wednesday, April 2", time: "10:30 AM", location: "City Health Center", doctor: "Dr.Rajesh Kumar" }
   ],
   [  // history
     { id: 201, vaccine: "COVID-19 Dose 1", date: "2024-03-15", time: "09:00 AM", location: "Downtown Clinic", doctor: "Dr. Adams" },
@@ -63,7 +63,7 @@ function App() {
         {/* Login route */}
         <Route path="/login" element={<DigiLockerLogin />} />
         <Route path="/dashboard" element={< Dashboard patient={john} />} />
-        <Route path="/ap" element={<Appointment/>}/>
+        <Route path="/ap" element={<Appointment patient={john}/>}/>
 
       </Routes>
     </BrowserRouter>

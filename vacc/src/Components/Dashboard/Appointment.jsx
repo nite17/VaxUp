@@ -1,11 +1,11 @@
-export default function Appointment() {
+export default function Appointment({patient}) {
     return(
     <div class="">
     <h2 class="ml-100 mt-20 text-6xl font-bold ">Your Appointments</h2>
     <div class="flex flex-col space-y-8 ml-100 -mt-4">
         <div class="h-[318px] w-[1041px] bg-gradient-to-r from-appointfro1 to-appointto1 mt-10 rounded-2xl shadow-lg ">
             <div class="flex justify-between mt-2 ">
-                <p class="font-semibold ml-6">Flu Booster Shot</p>
+                <p class="font-semibold ml-6">{patient?.pendingVaccinations[0].vaccine}</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" fill="currentColor" class="bi bi-calendar4 mr-10 mt-4" viewBox="0 0 16 16">
   <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
 </svg>
@@ -47,7 +47,7 @@ export default function Appointment() {
         </div>
         <div class="h-[318px] w-[1041px] bg-gradient-to-r from-appointfro2 to-appointto2 mt-10 rounded-2xl shadow-lg ">
             <div class="flex justify-between mt-2 ">
-                <p class="font-semibold ml-6">COVID-19 Booster</p>
+                <p class="font-semibold ml-6">{patient.appointments[0].vaccine}</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" fill="currentColor" class="bi bi-calendar4 mr-10 mt-4" viewBox="0 0 16 16">
   <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
 </svg>
@@ -55,11 +55,11 @@ export default function Appointment() {
             <hr class="border-1 max-w-240 align "></hr>
             <div class="flex justify-between ">
                 <div class="flex flex-col ml-6">
-                    <p class="text-2xl text-black font-extralight">Wednesday, April 02</p>
-                    <p class="text-4xl text-black font-extralight -mt-4">02:30 PM</p>
+                    <p class="text-2xl text-black font-extralight">{patient.appointments[0].date}</p>
+                    <p class="text-4xl text-black font-extralight -mt-4">{patient.appointments[0].time}</p>
                 </div>
                 <div class="flex flex-col mr-20">
-                    <p class="text-2xl text-black font-extralight">Location: Fortis Hospital, Bangalore</p>
+                    <p class="text-2xl text-black font-extralight">Location: {patient.appointments[0].location},Bangalore</p>
                     <button class="bg-black rounded-2xl h-[62px] w-[176px] ml-36 border-0 -mt-4 text-center text-sm text-white flex items-center justify-center space-x-2"
                     > <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18 " fill="currentColor" class="bi bi-crosshair2 " viewBox="0 0 16 16">
                     <path d="M8 0a.5.5 0 0 1 .5.5v.518A7 7 0 0 1 14.982 7.5h.518a.5.5 0 0 1 0 1h-.518A7 7 0 0 1 8.5 14.982v.518a.5.5 0 0 1-1 0v-.518A7 7 0 0 1 1.018 8.5H.5a.5.5 0 0 1 0-1h.518A7 7 0 0 1 7.5 1.018V.5A.5.5 0 0 1 8 0m-.5 2.02A6 6 0 0 0 2.02 7.5h1.005A5 5 0 0 1 7.5 3.025zm1 1.005A5 5 0 0 1 12.975 7.5h1.005A6 6 0 0 0 8.5 2.02zM12.975 8.5A5 5 0 0 1 8.5 12.975v1.005a6 6 0 0 0 5.48-5.48zM7.5 12.975A5 5 0 0 1 3.025 8.5H2.02a6 6 0 0 0 5.48 5.48zM10 8a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
@@ -70,7 +70,7 @@ export default function Appointment() {
             <div class="bg-gradient-to-r from-white to-appinto w-full rounded-2xl h-[116px] flex justify-between" >
                 <div class="flex flex-col  mt-1">
                     <p class=" ml-6 font-semibold ">Meet</p>
-                    <p class="text-4xl text-black font-extralight -mt-4 ml-6">Rajesh Kumar</p>
+                    <p class="text-4xl text-black font-extralight -mt-4 ml-6">{patient.appointments[0].doctor}</p>
                 </div>
                 <div class="flex space-x-4">
                     <button class="bg-red-600 rounded-2xl h-[62px] w-[118px] ml-36 border-0 mt-8 text-center text-sm text-white flex items-center justify-center space-x-1 ">
