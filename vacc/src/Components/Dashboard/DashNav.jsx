@@ -1,31 +1,31 @@
 import img from "../../assets/dashlogo.png"
 import {useState} from "react"
 import Dashboard from "./dashboard"
+import Appointment from "./Appointment";
 
 export default function DashNaV({patient}){
-    
-const componentA =()=> <Dashboard patient={patient}/>;
-    const [component,setcomponent]=useState(()=>componentA)
+    const [Component,setComponent]=useState(()=> <Dashboard patient={patient}/>);
+   
     return(
         <div class="min-w-screen min-h-screen relative">
         <div class="absolute inset-0 overflow-auto bg-[url('/background.png')] bg-cover bg-center bg-no-repeat">
         <div class="flex " id="dynamic">
-        <div class="flex flex-col w-100 h-screen  items-center">
+        <div class="  flex flex-col w-100 h-screen  items-center  fixed ">
         
         <p className="text-transparent bg-clip-text bg-gradient-to-r from-logofro to-logoto text-4xl  mt-15 font-black hover:cursor-pointer ">
           VaxUp
         </p>
         <img src={img} alt="logo" class="w-40 h-40 mt-24 " />
         <p class="text-2xl text-black    font-bold">{patient?.name}</p>
-        <div class="flex flex-col space-y-0 mt-11">
-            <div class=" flex space-x-3 items-center -mb-4">
+        <div class="flex flex-col space-y-0 mt-11 hover:cursor-pointer"  >
+            <div class=" flex space-x-3 items-center -mb-4"  onClick={()=>setComponent(<Dashboard patient={patient}/>)}>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house -mt-1" viewBox="0 0 16 16">
   <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
 </svg> <p class="text-black font-bold text-xl">Dashboard</p>
                  </div>
 
 
-                 <div class=" flex space-x-3 items-center -mb-4">
+                 <div class=" flex space-x-3 items-center -mb-4 hover:cursor-pointer" onClick={()=>setComponent(<Appointment patient={patient}/>)}>
                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-calendar4 -mt-1" viewBox="0 0 16 16">
   <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
 </svg> <p class="text-black font-bold text-xl">Appointments</p>
@@ -52,7 +52,7 @@ const componentA =()=> <Dashboard patient={patient}/>;
         </div>
         </div>
         <div class="h-[900px]  mt-2 mb-2  border-slate-300 border-1"></div>
-        <div>{component}</div>
+        <div class="ml-100">{Component}</div>   
         </div>
         </div>
         </div>

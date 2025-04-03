@@ -12,9 +12,11 @@ export default function NavBar() {
         <a href="#FAQ" className="text-xl font-semibold text-navb mt-2 transition-all duration-200 hover:scale-110 no-underline">
           FAQ
         </a>
-        <a href="#" className="text-xl font-semibold text-navb mt-2 transition-all duration-200 hover:scale-110 no-underline">
+        <Link to="/dashnav" class="underline decoration-0 decoration-white mt-2">
+        <a href="#" className="text-xl font-semibold text-navb mt-2 transition-all duration-200 hover:scale-110 underline decoration-0 decoration-white ">
           Dashboard
         </a>
+        </Link>
         <Link to="/login">
           <button className="rounded-xl w-[117px] h-[45px] text-2xl text-log font-semibold border-log border-[1px] text-center transition-all duration-500 hover:bg-log hover:text-white hover:cursor-pointer bg-white">
             Log in
