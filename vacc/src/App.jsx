@@ -13,6 +13,7 @@ import FAQ from './Components/Landing/FAQ.jsx';
 import Dashboard from './Components/Dashboard/dashboard.jsx';
 import Appointment from './Components/Dashboard/Appointment.jsx';
 import { Patient } from './Components/Dashboard/profile.jsx';
+import DashNaV from './Components/Dashboard/DashNav.jsx';
 
 const john = new Patient(
   1, // id
@@ -67,7 +68,7 @@ function App() {
         <Route path="/login" element={<DigiLockerLogin />} />
         <Route path="/dashboard" element={< Dashboard patient={john} />} />
         <Route path="/appointment" element={<Appointment patient={john}/>}/>
-
+        <Route path="/dashnav" element={<DashNaV patient={john}/>} />
       </Routes>
     </BrowserRouter>
   );
