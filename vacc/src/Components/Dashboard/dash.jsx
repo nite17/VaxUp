@@ -35,7 +35,7 @@ export default function Dash({ patient }) {
             <div className="main-info">
                 <div className="upcoming">
                     <div className="heading">
-                        <h1 className="title">Upcoming Appointments</h1>
+                        <h1 className="title-card">Upcoming Appointments</h1>
                         <img src={upcoming} />
                     </div>
                     <div className="upcoming-info">
@@ -47,7 +47,7 @@ export default function Dash({ patient }) {
                 </div>
                 <div className="totalVax">
                     <div className="heading">
-                        <h1 className="title">Total Vaccines Recieved</h1>
+                        <h1 className="title-card">Total Vaccines Recieved</h1>
                         <img src={totalvax} />
                     </div>
                     <div className="totalvax-info">
@@ -56,7 +56,7 @@ export default function Dash({ patient }) {
                 </div>
                 <div className="pendingVax">
                     <div className="heading">
-                        <h1 className="title">Pending Vaccinations</h1>
+                        <h1 className="title-card">Pending Vaccinations</h1>
                         <img src={pendingvax} />
                     </div>
                     <div className="pending-info">

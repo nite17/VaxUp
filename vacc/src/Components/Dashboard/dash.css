@@ -91,15 +91,16 @@
     width: 3rem;
 }
 
-.title {
-    margin-bottom: 0 !important;
-    padding-left: 0 !important;
-    width: 200px !important;
-    color: black !important;
+.title-card {
+    margin-bottom: 0;
+    padding-left: 0;
+    font-size: 24px;
+    width: 200px;
+    color: rgb(0, 0, 0);
 }
 
 .upcoming-info {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .upcoming-info h2 {
@@ -146,7 +147,7 @@
     background-color: white;
     border-radius: 20px;
     margin-top: 80px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .pending-box h1 {
