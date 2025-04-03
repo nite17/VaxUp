@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import "./DigiLockerLogin.css";
 
 const DigiLockerLogin = () => {
@@ -7,6 +7,7 @@ const DigiLockerLogin = () => {
   const [idValue, setIdValue] = useState("");   // Mobile or Aadhaar value
   const [pinValue, setPinValue] = useState(""); // 6-digit PIN
   const [errorMessage, setErrorMessage] = useState("");
+  const navigate = useNavigate();
 
   const handleNext = () => {
     // Validate the ID field
@@ -33,12 +34,11 @@ const DigiLockerLogin = () => {
 
     // All validations passed
     setErrorMessage("");
-    alert("Validation successful!");
-    // Proceed with further processing...
+    navigate("/dashnav");
   };
 
   // Change the placeholder for the first field based on the active tab
-  const idPlaceholder = activeTab === "mobile" ? "mobile mumber" : "aadhaar number";
+  const idPlaceholder = activeTab === "mobile" ? "mobile number" : "aadhaar number";
 
   return (
     <div className="login-container">

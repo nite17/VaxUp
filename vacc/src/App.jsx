@@ -69,11 +69,8 @@ function App() {
         />
         {/* Login route */}
         <Route path="/login" element={<DigiLockerLogin />} />
-        <Route path="/dashboard" element={< Dashboard patient={john} />} />
-        <Route path="/appointment" element={<Appointment patient={john} />} />
-        <Route path="/dashnav" element={<DashNaV patient={john} />} />
-        <Route path="/history" element={<History patient={john} />} />
         <Route path="/signup" element={<DigiLockerSignup />} />
+        <Route path="/dashnav" element={<DashNaV patient={john} />} />
       </Routes>
     </BrowserRouter>
   );
