@@ -24,7 +24,7 @@ export class Patient {
         this.appointments.push({ id, vaccine, date, time, location, doctor });
     }
 
-    addHistory(id, vaccine, date, time, location, doctor,status="missed") {
-        this.history.push({ id, vaccine, date, time, location, doctor,status });
+    addHistory(id, vaccine, date, time, location, doctor , status = "missed") {
+        this.history.push({ id, vaccine, date, time, location, doctor , status});
     }
 }

@@ -6,7 +6,7 @@ import VaxCount from './Components/Landing/VaxCount';
 import ThreeSteps from './Components/Landing/ThreeSteps';
 import LatestNews from './Components/Landing/LatestNews';
 import Footer from './Components/Landing/Footer.jsx';
-import DigiLockerLogin from './Components/DigiLockerLogin';
+import DigiLockerLogin from './Components/DigiLockerLogin.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ABHAInfo from './Components/Landing/ABHAInfo.jsx';
 import FAQ from './Components/Landing/FAQ.jsx';
@@ -14,6 +14,7 @@ import Dashboard from './Components/Dashboard/dashboard.jsx';
 import Appointment from './Components/Dashboard/Appointment.jsx';
 import { Patient } from './Components/Dashboard/profile.jsx';
 import DashNaV from './Components/Dashboard/DashNav.jsx';
+import History from './Components/Dashboard/History.jsx';
 
 const john = new Patient(
   1, // id
@@ -34,10 +35,10 @@ const john = new Patient(
     { id: 102, vaccine: "Flu Shot", date: "Thursday, April 4", time: "2:00 PM", location: "Downtown Clinic", doctor: "Dr. Ananya Sharma" },
     { id: 103, vaccine: "Hepatitis B", date: "Friday, April 5", time: "1:30 PM", location: "City Hospital", doctor: "Dr. Vikram Patel" },
     { id: 104, vaccine: "MMR Vaccine", date: "Saturday, April 6", time: "9:00 AM", location: "Community Health Center", doctor: "Dr. Priya Mehta" }
-],
+  ],
   [  // history
-    { id: 201, vaccine: "COVID-19 Dose 1", date: "2024-03-15", time: "09:00 AM", location: "Downtown Clinic", doctor: "Dr. Adams" },
-    { id: 202, vaccine: "COVID-19 Dose 2", date: "2024-04-15", time: "09:30 AM", location: "Downtown Clinic", doctor: "Dr. Adams" }
+    { id: 201, vaccine: "COVID-19 Dose 1", date: "2024-03-15", time: "09:00 AM", location: "Downtown Clinic", doctor: "Dr. Adams", status: "completed" },
+    { id: 202, vaccine: "COVID-19 Dose 2", date: "2024-04-15", time: "09:30 AM", location: "Downtown Clinic", doctor: "Dr. Adams", status: "missed" }
   ]
 );
 
@@ -70,6 +71,7 @@ function App() {
         <Route path="/dashboard" element={< Dashboard patient={john} />} />
         <Route path="/appointment" element={<Appointment patient={john}/>}/>
         <Route path="/dashnav" element={<DashNaV patient={john}/>} />
+        <Route path="/history" element={<History patient={john}/>} />
       </Routes>
     </BrowserRouter>
   );
