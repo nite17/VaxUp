@@ -22,10 +22,11 @@ const john = new Patient(
     { id: 101, vaccine: "Flu Booster Shot", desc: "Booster Shot", due: "2 months" }
   ],
   [  // familyMembers
-    { id: 2, name: "Jane Doe" },
-    { id: 2, name: "Jane Doe" },
-    { id: 2, name: "Jane Doe" },
-    { id: 3, name: "Jake Doe" }
+    { id: 2, name: "vansh reddy" },
+    { id: 2, name: "kastub reddy" },
+    { id: 2, name: "nehan reddy" },
+    { id: 3, name: "bhavye reddy" },
+    { id: 3, name: "krissh reddy" }
   ],
   [
     { id: 101, vaccine: "COVID-19 Booster", date: "Wednesday, April 2", time: "10:30 AM", location: "City Health Center", doctor: "Dr. Rajesh Kumar" },

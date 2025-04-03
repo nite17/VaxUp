@@ -92,10 +92,10 @@
 }
 
 .title {
-    margin-bottom: 0;
-    padding-left: 0;
-    width: 200px;
-    color: black;
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+    width: 200px !important;
+    color: black !important;
 }
 
 .upcoming-info {
