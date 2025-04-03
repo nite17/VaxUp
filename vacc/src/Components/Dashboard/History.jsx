@@ -5,7 +5,7 @@ import tick from '../../assets/tick.png'
 
 const HistoryCard = ({ HistoryEntry }) => {
   return (
-    <div className={`p-5 rounded-2xl shadow-lg text-black relative ${HistoryEntry.status==="completed" ? 'bg-gradient-to-r from-[#0BDEF9] to-[#068393]' : 'bg-gradient-to-r from-[#F95E0B] to-[#E4DACF]'} w-[1041px] h-[263px]`}>
+    <div className={`hover:transform hover:-translate-y-[5px] transition-transform duration-300 ease-in-out p-5 rounded-2xl shadow-lg text-black relative ${HistoryEntry.status==="completed" ? 'bg-gradient-to-r from-[#0BDEF9] to-[#068393]' : 'bg-gradient-to-r from-[#F95E0B] to-[#E4DACF]'} w-[1041px] h-[263px]`}>
       <h3 className="font-semibold flex justify-between text-[24px]">
 
         <div>

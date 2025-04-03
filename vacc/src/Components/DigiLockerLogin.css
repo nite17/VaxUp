@@ -1,143 +1,150 @@
-/* DigiLockerLogin.css */
 @font-face {
-    font-family: 'Jaro';
-    src: url('../assets/fonts/Jaro.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  .jersey-text {
-    font-family: 'Jersey 20', sans-serif;
-  }
-  
-  body {
-    font-family: 'Jaro', sans-serif;
-    font-size: 18px; /* Increased base font size */
-    line-height: 1.5;
-  }
-  
-  .login-container {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url("../assets/purpleBg.jpg") no-repeat center center/cover;
-    font-family: 'Jaro', sans-serif !important;
-  }
-  
-  .login-box {
-    width: 400px;
-    padding: 20px;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    text-align: left;  /* All inner elements aligned to left by default */
-  }
-  
-  .logo {
-    height: 40px;
-    margin: 0 auto 15px; /* Centered logo */
-    display: block;
-  }
-  
-  .title {
-    font-size: 22px; /* Increased title font size */
-    font-weight: bold;
-    margin-bottom: 24px;
-    /* With the login-box padding, the title will start exactly 20px from the left */
-  }
-  
-  .tabs {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .tab {
-    padding: 12px 24px; /* Increased padding for better readability */
-    border-radius: 10px;
-    background: #5c30ee;
-    color: white;
-    font-weight: bold;
-    margin: 0 10px;
-    cursor: pointer;
-    border: none;
-    transition: background 0.3s, color 0.3s;
-    font-family: inherit;
-    font-size: 18px;
-  }
-  
-  .tab.active {
-    background: #ffcc00;
-    color: black;
-  }
-  
-  .input-box {
-    display: block;
-    width: 100%; /* Fills the container's content area */
-    box-sizing: border-box; /* Includes padding in width calculation */
-    margin: 10px 0;
-    padding: 12px; /* Increased padding for more space */
-    border: none;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.4);
-    text-align: left;
-    font-size: 18px; /* Increased input font size */
-    font-family: inherit;
-  }
-  
-  /* Hide placeholder text immediately on focus */
-  .input-box:focus::placeholder {
-    color: transparent;
-    transition: color 0.2s ease-out;
-  }
-  
-  .forgot {
-    text-align: right;
-    font-size: 14px; /* Slightly increased font size */
-    margin: 5px 0;
-    cursor: pointer;
-  }
-  
-  .login-btn {
-    display: block;
-    width: 100%; /* Fills the same content area */
-    padding: 12px; /* Increased padding */
-    background: #5c30ee;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px; /* Increased button text size */
-    cursor: pointer;
-    margin-top: 10px;
-    font-family: inherit;
-  }
-  
-  .signup {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 16px;
-  }
-  
-  /* Ensure placeholder text uses the inherited font and is left aligned */
-  ::placeholder {
-    text-align: left;
-    font-family: inherit;
-    font-size: 18px;
-  }
-  
-  .error-message {
-    color: red;
-    font-size: 14px;
-    margin: 5px 20px 0 20px;
-    text-align: left;
-  }
+  font-family: 'Jaro';
+  src: url('../assets/fonts/Jaro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  .signup {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 16px;
-    font-family: 'Jersey 20', sans-serif;
-  }
-  
+body {
+  font-family: 'Jaro', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/purpleBg.jpg") no-repeat center center/cover;
+  font-family: 'Jaro', sans-serif !important;
+}
+
+.login-box {
+  width: 400px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  text-align: left;
+}
+
+.logo {
+  height: 40px;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 12px 24px;
+  border-radius: 10px;
+  background: #5c30ee;
+  color: white;
+  font-weight: bold;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s, color 0.3s;
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.tab.active {
+  background: #ffcc00;
+  color: black;
+}
+
+.input-box {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.4);
+  text-align: left;
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.input-box:focus::placeholder {
+  color: transparent;
+  transition: color 0.2s ease-out;
+}
+
+.forgot {
+  text-align: right;
+  font-size: 14px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.login-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #5c30ee;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: inherit;
+}
+
+.signup {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: 'Jersey 20', sans-serif;
+}
+
+::placeholder {
+  text-align: left;
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin: 5px 20px 0 20px;
+  text-align: left;
+}
+
+.family-members {
+  margin: 15px 0;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 15px;
+}
+
+.member-fields {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.member-fields select {
+  appearance: none;
+  background: rgba(255,255,255,0.4);
+  border-radius: 5px;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 18px;
+}

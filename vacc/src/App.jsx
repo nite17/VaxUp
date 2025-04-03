@@ -7,6 +7,7 @@ import ThreeSteps from './Components/Landing/ThreeSteps';
 import LatestNews from './Components/Landing/LatestNews';
 import Footer from './Components/Landing/Footer.jsx';
 import DigiLockerLogin from './Components/DigiLockerLogin.jsx';
+import DigiLockerSignup from './Components/DigiLockerSignup.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ABHAInfo from './Components/Landing/ABHAInfo.jsx';
 import FAQ from './Components/Landing/FAQ.jsx';
@@ -69,9 +70,10 @@ function App() {
         {/* Login route */}
         <Route path="/login" element={<DigiLockerLogin />} />
         <Route path="/dashboard" element={< Dashboard patient={john} />} />
-        <Route path="/appointment" element={<Appointment patient={john}/>}/>
-        <Route path="/dashnav" element={<DashNaV patient={john}/>} />
-        <Route path="/history" element={<History patient={john}/>} />
+        <Route path="/appointment" element={<Appointment patient={john} />} />
+        <Route path="/dashnav" element={<DashNaV patient={john} />} />
+        <Route path="/history" element={<History patient={john} />} />
+        <Route path="/signup" element={<DigiLockerSignup />} />
       </Routes>
     </BrowserRouter>
   );

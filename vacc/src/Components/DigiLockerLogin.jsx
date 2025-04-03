@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import "./DigiLockerLogin.css";
 
 const DigiLockerLogin = () => {
@@ -95,7 +96,7 @@ const DigiLockerLogin = () => {
           next
         </button>
         <p className="signup">
-          don't have an account? <b>sign-up!</b>
+          don't have an account? <Link to="/signup" style={{ textDecoration: 'none', color: 'inherit' }}><b>sign-up!</b></Link>
         </p>
       </div>
     </div>
