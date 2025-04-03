@@ -1,0 +1,184 @@
+.schedule-container {
+    flex: 1;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .schedule-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .back-button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #555;
+    margin-right: 4rem;
+    font-weight: 500;
+  }
+  
+  .schedule-title {
+    color: #000000;
+    font-size: 2.8rem;
+    margin: 0;
+  }
+  
+  .vaccination-info-card {
+    background-color: #F4F7FE;
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .vaccination-info-card h2 {
+    color: #2B3674;
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .vaccine-details {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 12px;
+  }
+  
+  .vaccine-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2B3674;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .vaccine-due {
+    font-size: 1rem;
+    color: #FF5403;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .vaccine-desc {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+  }
+  
+  .schedule-form {
+    background-color: #F4F7FE;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .input-container {
+    flex: 1;
+  }
+  
+  .input-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2B3674;
+    font-weight: 500;
+  }
+  
+  .input-container input,
+  .input-container select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 1rem;
+  }
+  
+  .time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .time-slot {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .time-slot.selected {
+    background-color: #422AFB;
+    color: white;
+    border-color: #422AFB;
+  }
+  
+  .appointment-summary {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .appointment-summary h3 {
+    color: #2B3674;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .summary-details p {
+    margin: 0.5rem 0;
+    color: #555;
+  }
+  
+  .schedule-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #422AFB;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease;
+  }
+  
+  .schedule-button:hover {
+    background-color: #3722d3;
+  }
+  
+  /* For dashboard container layout */
+  .dashboard-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  @media (max-width: 768px) {
+    .schedule-container {
+      padding: 1rem;
+    }
+    
+    .time-slots {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

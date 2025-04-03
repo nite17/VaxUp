@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { FaArrowLeft } from "react-icons/fa"; // back arrow icon
 import { FiUploadCloud } from "react-icons/fi";
+import { useNavigate } from 'react-router-dom';
 
 import "./AddVax.css";
 
-const AddVax = () => {
+const AddVax = ({ onSave }) => {
+  const navigate = useNavigate();
   const [vaccineName, setVaccineName] = useState("");
   const [doseNumber, setDoseNumber] = useState("");
   const [dateAdministered, setDateAdministered] = useState("");
@@ -17,15 +19,40 @@ const AddVax = () => {
   };
 
   const handleSave = () => {
+    // Check if required fields are filled
+    if (!vaccineName || !doseNumber || !dateAdministered || !location) {
+      alert("Please fill out all required fields");
+      return;
+    }
     
-    alert("Vaccination record saved!");
+    // Create record object
+    const newRecord = {
+      vaccineName,
+      doseNumber,
+      dateAdministered,
+      location,
+      administeredBy,
+      proofFile
+    };
+    
+    // Send data to parent component
+    onSave(newRecord);
+    
+    // Alert and navigate back to dashboard
+    alert("Vaccination record saved successfully!");
+    navigate("/dashnav");
+  };
+
+  // Handler for back button
+  const handleBack = () => {
+    navigate("/dashnav");
   };
 
   return (
     <div className="add-vaccine-container">
       {/* Header outside the card */}
       <div className="header-outside">
-        <FaArrowLeft className="back-arrow" />
+        <FaArrowLeft className="back-arrow" onClick={handleBack} style={{ cursor: 'pointer' }} />
         <h2 className="page-title">Add Vaccine Record</h2>
         <button className="save-btn" onClick={handleSave}>
           <span className="save-btn-text">Save</span>
@@ -38,51 +65,55 @@ const AddVax = () => {
           {/* Left Column */}
           <div className="left-column">
             <div className="form-group">
-              <label htmlFor="vaccineName">Vaccine Name</label>
+              <label htmlFor="vaccineName">Vaccine Name*</label>
               <select
                 id="vaccineName"
                 value={vaccineName}
                 onChange={(e) => setVaccineName(e.target.value)}
+                required
               >
                 <option value="">Select vaccine</option>
-                <option value="covaxin">Covaxin</option>
-                <option value="covishield">Covishield</option>
-                <option value="sputnik">Sputnik V</option>
+                <option value="Covaxin">Covaxin</option>
+                <option value="Covishield">Covishield</option>
+                <option value="Sputnik V">Sputnik V</option>
               </select>
             </div>
 
             <div className="form-group">
-              <label htmlFor="doseNumber">Dose Number</label>
+              <label htmlFor="doseNumber">Dose Number*</label>
               <select
                 id="doseNumber"
                 value={doseNumber}
                 onChange={(e) => setDoseNumber(e.target.value)}
+                required
               >
                 <option value="">Select dose</option>
-                <option value="1">Dose 1</option>
-                <option value="2">Dose 2</option>
-                <option value="booster">Booster</option>
+                <option value="Dose 1">Dose 1</option>
+                <option value="Dose 2">Dose 2</option>
+                <option value="Booster">Booster</option>
               </select>
             </div>
 
             <div className="form-group">
-              <label htmlFor="dateAdministered">Date Administered</label>
+              <label htmlFor="dateAdministered">Date Administered*</label>
               <input
                 type="date"
                 id="dateAdministered"
                 value={dateAdministered}
                 onChange={(e) => setDateAdministered(e.target.value)}
+                required
               />
             </div>
 
             <div className="form-group">
-              <label htmlFor="location">Location</label>
+              <label htmlFor="location">Location*</label>
               <input
                 type="text"
                 id="location"
                 placeholder="Enter location (e.g., hospital, city)"
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
+                required
               />
             </div>
 
