@@ -1,0 +1,175 @@
+/* AddVax.css */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: url('/public/dashBg.png') center/cover no-repeat;
+  overflow: hidden;
+}
+
+.add-vaccine-container {
+  margin: 40px 40px 40px 300px;
+  padding: 20px;
+  min-height: calc(100vh - 80px);
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.header-outside {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.back-arrow {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.page-title {
+  flex-grow: 1;
+  font-size: 64px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.save-btn {
+  background-color: #000;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: opacity 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.save-btn:hover { opacity: 0.8; }
+
+.save-btn-text {
+  font-size: 32px;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #00E2FF, #6EB5BE);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.add-vaccine-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  max-width: calc(100vw - 360px);
+  box-sizing: border-box;
+}
+
+.form-section {
+  display: flex;
+  gap: 20px;
+}
+
+.left-column {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  padding-right: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.right-column {
+  flex: 1;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.upload-box {
+  border: 2px dashed #ccc;
+  border-radius: 6px;
+  padding: 20px;
+  background-color: #fafafa;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.upload-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.file-input {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.browse-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: opacity 0.3s;
+  margin-bottom: 10px;
+}
+
+.browse-btn:hover { opacity: 0.8; }
+
+.file-name {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.cancel-btn {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-image: linear-gradient(135deg, #FF0012, #B3000C);
+  border: none;
+  padding: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: opacity 0.3s;
+}
+
+.cancel-btn:hover { opacity: 0.8; }
+
+.cancel-btn-text { color: #fff; }
