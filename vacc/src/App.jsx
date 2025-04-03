@@ -14,6 +14,7 @@ import Dashboard from './Components/Dashboard/dashboard.jsx';
 import Appointment from './Components/Dashboard/Appointment.jsx';
 import { Patient } from './Components/Dashboard/profile.jsx';
 import DashNaV from './Components/Dashboard/DashNav.jsx';
+import History from './Components/Dashboard/History.jsx';
 
 const john = new Patient(
   1, // id
@@ -68,8 +69,9 @@ function App() {
         {/* Login route */}
         <Route path="/login" element={<DigiLockerLogin />} />
         <Route path="/dashboard" element={< Dashboard patient={john} />} />
-        <Route path="/appointment" element={<Appointment patient={john} />} />
-        <Route path="/dashnav" element={<DashNaV patient={john} />} />
+        <Route path="/appointment" element={<Appointment patient={john}/>}/>
+        <Route path="/dashnav" element={<DashNaV patient={john}/>} />
+        <Route path="/history" element={<History patient={john}/>} />
       </Routes>
     </BrowserRouter>
   );
