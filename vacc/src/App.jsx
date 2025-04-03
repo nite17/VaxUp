@@ -6,7 +6,7 @@ import VaxCount from './Components/Landing/VaxCount';
 import ThreeSteps from './Components/Landing/ThreeSteps';
 import LatestNews from './Components/Landing/LatestNews';
 import Footer from './Components/Landing/Footer.jsx';
-import DigiLockerLogin from './Components/DigiLockerLogin';
+import DigiLockerLogin from './Components/DigiLockerLogin.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ABHAInfo from './Components/Landing/ABHAInfo.jsx';
 import FAQ from './Components/Landing/FAQ.jsx';
