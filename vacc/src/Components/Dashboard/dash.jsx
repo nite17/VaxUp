@@ -72,8 +72,16 @@ export default function Dash({ patient }) {
                 <div className="quickOverview">
                     <h1>Quick Overview</h1>
                     <div className="quickOverviewBox">
-                        <h1>Appointment reminder</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h1>Missed Appointment</h1>
+                        <ul>
+                            {patient.history.map((event) => {
+                                if (event.status === "missed") {
+                                    return (
+                                        <li>{event.vaccine} missed</li>
+                                    )
+                                }
+                            })}
+                        </ul>
                     </div>
                 </div>
                 <div className="family">

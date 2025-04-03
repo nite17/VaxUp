@@ -249,7 +249,7 @@
     color: #222;
 }
 
-.quickOverviewBox p {
+.quickOverviewBox li {
     font-size: 24px;
     margin-top: 8px;
     font-style: italic;
