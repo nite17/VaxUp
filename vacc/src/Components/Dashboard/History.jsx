@@ -31,7 +31,7 @@ const HistoryCard = ({ HistoryEntry }) => {
       </div>
       
       {HistoryEntry.status === "missed" && (
-        <button className="absolute bottom-4 right-26 mb-2 bg-gradient-to-r from-[#0066FF] to-[#003D99] text-white px-4 py-2 rounded-xl shadow-md w-[147px] h-[62px] flex items-center justify-center">
+        <button className="absolute bottom-4 right-26 mb-2 bg-gradient-to-r from-[#0066FF] to-[#003D99] text-white px-4 py-2 rounded-xl shadow-md w-[147px] h-[62px] flex items-center justify-center border-0">
                 <img src={tick} className="w-[30px] h-[30px] mr-2" />
                 <span>Reschedule</span>    
         </button>
