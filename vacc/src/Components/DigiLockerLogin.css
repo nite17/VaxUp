@@ -31,7 +31,6 @@ body {
   text-align: left;
 }
 
-/* Restoring exact font styling */
 .logo {
   height: 40px;
   margin: 0 auto 15px;
@@ -129,7 +128,6 @@ body {
   text-align: left;
 }
 
-/* Exact family member styling */
 .family-members {
   margin: 15px 0;
   border-top: 1px solid rgba(255,255,255,0.3);
