@@ -141,3 +141,35 @@
     font-family: 'Jersey 20', sans-serif;
   }
   
+  ::placeholder {
+    text-align: left;
+    font-family: inherit;
+    font-size: 18px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin: 5px 20px 0 20px;
+    text-align: left;
+  }
+
+  /* Add these styles at the bottom */
+.family-members {
+  margin: 15px 0;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 15px;
+}
+
+.member-fields {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.member-fields select {
+  appearance: none;
+  background: rgba(255,255,255,0.4);
+  border-radius: 5px;
+  padding: 12px;
+}
