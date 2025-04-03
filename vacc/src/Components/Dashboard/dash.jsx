@@ -21,7 +21,7 @@ const CurrentDateTime = () => {
 
 export default function Dash({ patient }) {
     return (
-        <div className="dash">
+        <div className="dash ml-100 -mt-6">
             <div className="Head">
                 <div className="welcome">
                     <h1>Hello, {patient?.name}</h1>

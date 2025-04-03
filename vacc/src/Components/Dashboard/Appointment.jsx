@@ -2,8 +2,8 @@ export default function Appointment({ patient }) {
     const colorpairs = [["#0BDEF9", "#068393"], ["#B199FF", "#B199FF"], ["#99FFB8", "#5C9970"]];
 
     return (
-        <div class="">
-            <h2 class="ml-100 mt-20 text-6xl font-bold ">Your Appointments</h2>
+        <div class="ml-30">
+            <h2 class=" mt-20 ml-100 text-6xl font-bold ">Your Appointments</h2>
             <div class="flex flex-col space-y-8 ml-100 -mt-4 overflow-hidden">
                 {patient.appointments.map((app, index) => {
                     const colors = colorpairs[index % colorpairs.length];
@@ -11,7 +11,7 @@ export default function Appointment({ patient }) {
                     return (
                         <div
                             key={index}
-                            class="h-[318px] w-[1041px] mt-10 rounded-2xl shadow-lg"
+                            class="h-[318px] w-[1041px] mt-10 rounded-2xl shadow-lg hover:transform hover:-translate-y-[5px] transition-transform duration-300 ease-in-out"
                             style={{ background: `linear-gradient(to right, ${colors[0]}, ${colors[1]})` }}
                         >
                             <div class="flex justify-between mt-2 ">
