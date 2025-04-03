@@ -1,0 +1,29 @@
+.bar-graph-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+}
+
+.graph-title {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.recharts-bar-rectangle {
+  transition: transform 0.8s ease-in-out;
+}
+
+.recharts-bar-rectangle:hover {
+  transform: scaleY(1.1);
+}
+
+.recharts-cartesian-axis-tick text {
+  fill: #fff !important;
+  font-size: 14px;
+}

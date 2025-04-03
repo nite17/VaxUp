@@ -16,6 +16,7 @@ import Appointment from './Components/Dashboard/Appointment.jsx';
 import { Patient } from './Components/Dashboard/profile.jsx';
 import DashNaV from './Components/Dashboard/DashNav.jsx';
 import History from './Components/Dashboard/History.jsx';
+import BarGraph from "./Components/BarGraph";
 
 const john = new Patient(
   1, // id
@@ -60,6 +61,7 @@ function App() {
               <VaxCount />
               <ThreeSteps />
               <LatestNews />
+              <BarGraph />
               <FAQ />
               <ABHAInfo />
               <Footer />
