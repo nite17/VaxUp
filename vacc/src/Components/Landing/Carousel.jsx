@@ -4,6 +4,8 @@ import VaccinationTiming from '../VaccinationTiming';
 import VaccinationImportance from '../VaccinationImportance';
 import VaccineJourney from '../VaccineJourney';
 import './Carousel.css';
+import { Link } from "react-router-dom";
+import VaxUp from '../VaxUp';
 
 const carouselItems = [
   {
@@ -12,7 +14,7 @@ const carouselItems = [
     description:
       "Easily book your vaccination appointments, access certificates and  stay updated on the latest health advisories - all in one place.",
     description2: 'Your health, just a click away.',
-    component: null
+    component: VaxUp
   },
   {
     img: '/article1.jpg',
@@ -111,9 +113,11 @@ export default function Carousel() {
             Learn More
           </button>
           {index==0 && (
+            <Link to="/signup">
             <button className="rounded-2xl text-xl px-12 mt-2 py-3 border-white border-2 text-vaxcom bg-white font-medium hover:opacity-60 hover:cursor-pointer">
               Register Now
             </button>
+            </Link>
           )}
         </div>
         <button className="bg-transparent border-0 text-white absolute left-0" onClick={prevSlide}><ChevronLeft size={40}/></button>
