@@ -21,10 +21,8 @@ const Schedule = ({ patient, onSchedule }) => {
   // Available doctors
   const doctors = ["Dr. Rajesh Kumar", "Dr. Ananya Sharma", "Dr. Vikram Patel", "Dr. Priya Mehta"];
   
-  // Get today's date and format it for min attribute of date input
   const today = new Date().toISOString().split('T')[0];
   
-  // Convert selected date to formatted string (e.g., "Monday, April 15")
   const formatDate = (dateString) => {
     if (!dateString) return "";
     
@@ -36,7 +34,6 @@ const Schedule = ({ patient, onSchedule }) => {
     });
   };
   
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     
@@ -45,7 +42,6 @@ const Schedule = ({ patient, onSchedule }) => {
       return;
     }
     
-    // Create appointment data object
     const appointmentData = {
       vaccine: pendingVaccination.vaccine,
       date: formatDate(selectedDate),
@@ -54,11 +50,8 @@ const Schedule = ({ patient, onSchedule }) => {
       doctor: selectedDoctor
     };
     
-    // Call the onSchedule function to update patient data
     onSchedule(appointmentData);
     
-    // Show success message and navigate back to dashboard
-    alert("Appointment scheduled successfully!");
     navigate('/dashnav');
   };
 
@@ -68,7 +61,7 @@ const Schedule = ({ patient, onSchedule }) => {
       <div className="schedule-container">
         <div className="schedule-header">
           <Link to="/dashnav" className="back-button">
-            <span>&larr; Back to Dashboard</span>
+            <span>&larr; Dashboard</span>
           </Link>
           <h1 className="schedule-title">Schedule Vaccination</h1>
         </div>

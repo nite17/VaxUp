@@ -3,6 +3,7 @@ import {useState} from "react"
 import Dashboard from "./dashboard"
 import Appointment from "./Appointment";
 import History from "./History";
+import { Link } from "react-router-dom";
 
 export default function DashNaV({patient}){
     const [Component,setComponent]=useState(()=> <Dashboard patient={patient}/>);
@@ -12,11 +13,12 @@ export default function DashNaV({patient}){
         <div class="absolute inset-0 overflow-auto bg-[url('/background.png')] bg-cover bg-center bg-no-repeat">
         <div class="flex " id="dynamic">
         <div class="  flex flex-col w-100 h-screen  items-center  fixed ">
-        
-        <p className="text-transparent bg-clip-text bg-gradient-to-r from-logofro to-logoto text-4xl  mt-15 font-black hover:cursor-pointer ">
-          VaxUp
-        </p>
-        <img src={img} alt="logo" class="w-40 h-40 mt-24 " />
+        <Link className= "no-underline" to='/'>
+          <p className="text-transparent bg-clip-text bg-gradient-to-r from-logofro to-logoto text-4xl  mt-15 font-black hover:cursor-pointer ">
+            VaxUp
+          </p>
+          <img src={img} alt="logo" class="w-40 h-40 mt-24 " />
+        </Link>
         <p class="text-2xl text-black    font-bold">{patient?.name}</p>
         <div class="flex flex-col space-y-0 mt-11 hover:cursor-pointer"  >
             <div class=" flex space-x-3 items-center -mb-4"  onClick={()=>setComponent(<Dashboard patient={patient}/>)}>
